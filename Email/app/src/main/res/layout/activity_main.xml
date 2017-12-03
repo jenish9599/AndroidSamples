@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jenish9599.android.email.MainActivity">
+
+    <TextView
+        android:id="@+id/text_email_ID"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:text="Recipients : ">
+    </TextView>
+
+    <EditText
+        android:id="@+id/email_id"
+        android:layout_below="@id/text_email_ID"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        ></EditText>
+
+
+
+    <TextView
+        android:id="@+id/text_subject"
+        android:layout_below="@+id/email_id"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Subjects : ">
+    </TextView>
+
+    <EditText
+        android:layout_below="@id/text_subject"
+        android:id="@+id/subject"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        ></EditText>
+
+
+    <TextView
+        android:id="@+id/text_body"
+        android:layout_below="@id/subject"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Msg Body : ">
+    </TextView>
+
+    <EditText
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button"
+        android:layout_below="@id/text_body"></EditText>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEND"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button">
+    </Button>
+
+
+</RelativeLayout>
