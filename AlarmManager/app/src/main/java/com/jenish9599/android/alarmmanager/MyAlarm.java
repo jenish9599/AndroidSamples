@@ -16,10 +16,6 @@ public class MyAlarm extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
 
         MediaPlayer mediaPlayer = MediaPlayer.create(context,Settings.System.DEFAULT_NOTIFICATION_URI);
-
-        int i=0;
-        while(i < 10000000) {
-            mediaPlayer.start();
-        }
+        mediaPlayer.start();
     }
 }
