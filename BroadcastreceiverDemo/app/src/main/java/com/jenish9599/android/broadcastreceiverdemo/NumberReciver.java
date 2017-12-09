@@ -20,10 +20,13 @@ public class NumberReciver extends BroadcastReceiver {
         String state  = intent.getStringExtra(TelephonyManager.EXTRA_STATE);
         Toast.makeText(context, state,Toast.LENGTH_SHORT).show();
         if(state.equals(TelephonyManager.EXTRA_STATE_RINGING)){
-            String number = intent.getExtras().getString(TelephonyManager.EXTRA_STATE_RINGING);
+            String number = intent.getExtras().getString(TelephonyManager.EXTRA_INCOMING_NUMBER);
             DBHelper dbHelper = new DBHelper(context);
             SQLiteDatabase sqLiteDatabase = dbHelper.getWritableDatabase();
-            dbHelper.saveNumber("456789",sqLiteDatabase);
+
+
+            Toast.makeText(context,number,Toast.LENGTH_SHORT).show();
+            dbHelper.saveNumber(number,sqLiteDatabase);
 
 
             dbHelper.close();
