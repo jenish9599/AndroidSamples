@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+<android.support.v7.widget.CardView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:padding="15dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@mipmap/ic_launcher"
+        ></ImageView>
+    <TextView
+        android:id="@+id/textView"
+        android:padding="15dp"
+        android:text="HELLO"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+    </TextView>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+</LinearLayout>
