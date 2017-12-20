@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="flipCard"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tint="@color/cardfront"
+            android:padding="16dp"
+            android:src="@drawable/ic_featured_play_list_black_24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="FRONT"
+            android:textColor="#000000"
+            style="@style/Base.TextAppearance.AppCompat.Display1"
+            android:gravity="center"/>
+
+    </FrameLayout>
+</RelativeLayout>
