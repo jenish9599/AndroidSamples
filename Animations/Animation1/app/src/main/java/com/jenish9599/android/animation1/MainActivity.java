@@ -56,9 +56,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 ObjectAnimator scaleAnim = ObjectAnimator.ofFloat(button, "scaleX", 1.0f, 2.0f);
-
-
-
                 scaleAnim.setDuration(3000);
                 scaleAnim.setRepeatCount(ValueAnimator.INFINITE);
                 scaleAnim.setRepeatMode(ValueAnimator.REVERSE);

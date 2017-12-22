@@ -1,6 +1,7 @@
 package com.jenish9599.android.customviews;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -72,4 +73,15 @@ public class SimpleDrawingView extends View {
         postInvalidate();
         return true;
     }
+
+
+    public void init()
+    {
+
+
+
+    }
+
+
+
 }

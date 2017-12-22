@@ -17,7 +17,7 @@ import static android.app.PendingIntent.*;
 public class MainActivity extends AppCompatActivity {
 
 
-    private Button button ;
+    private Button button;
     NotificationCompat.Builder notification;
     private static final int uniqueID = 45612;
 
@@ -27,8 +27,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
-        button = (Button)findViewById(R.id.on_btn);
+        button = (Button) findViewById(R.id.on_btn);
         notification = new NotificationCompat.Builder(this);
         notification.setAutoCancel(true);
 
@@ -42,14 +41,14 @@ public class MainActivity extends AppCompatActivity {
                 notification.setContentText("I am the Body");
 
 
-                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
 
-                PendingIntent pendingIntent = PendingIntent.getActivities(getApplicationContext(),0, new Intent[]{intent}, 0);
+                PendingIntent pendingIntent = PendingIntent.getActivities(getApplicationContext(), 0, new Intent[]{intent}, 0);
                 notification.setContentIntent(pendingIntent);
 
 
-                NotificationManager nm = (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
-                nm.notify(uniqueID,notification.build());
+                NotificationManager nm = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+                nm.notify(uniqueID, notification.build());
 
 
             }
