@@ -67,4 +67,12 @@ public class ItemsListFragment extends Fragment {
         });
         return view;
     }
+
+    public void setActivateOnItemClick(boolean activateOnItemClick) {
+
+
+        lvItems.setChoiceMode(
+                activateOnItemClick ? ListView.CHOICE_MODE_SINGLE
+                        : ListView.CHOICE_MODE_NONE);
+    }
 }
