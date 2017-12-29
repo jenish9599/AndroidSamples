@@ -10,6 +10,8 @@ android:
     - extra-google-m2repository
     - extra-android-support
     - extra-google-google_play_services
+before_install:
+    - cd  BottomsheetsDemo
 
 
 jdk: oraclejdk8
